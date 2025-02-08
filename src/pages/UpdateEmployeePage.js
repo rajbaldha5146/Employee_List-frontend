@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
-import EmployeeForm from "../components/EmployeeForm";
+// import EditeEmployeeForm from "../components/EditEmployeeForm";
 import { Link } from "react-router-dom";
 import { FaBackward } from "react-icons/fa";
+import EditEmployeeForm from "../components/EditEmployeeForm";
 
 
 const UpdateEmployeePage = () => {
@@ -93,7 +94,7 @@ const UpdateEmployeePage = () => {
               </Link>
             </p>
 
-            <EmployeeForm
+            <EditEmployeeForm
               initialData={employee} // Pass the employee data to the form
               onSubmit={handleUpdate} // Handle form submission
             />
